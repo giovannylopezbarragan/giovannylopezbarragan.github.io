@@ -1,5 +1,6 @@
 function setup() {
-	createCanvas(800,900);
+	createCanvas(windowWidth,windowHeight);
+  resizeCanvas(windowWidth, windowHeight);
 	background (0,0,0)
   // put setup code here
 }
@@ -10,6 +11,8 @@ function draw() {
     background(0, 0, 0);
   } 
 //if the the mouse pressed is, our background is repainted black, erasing our sketch
+  translate(width / 5, height / 5);
+  translate(p5.Vector.fromAngle(millis() / 2000, 750));
   stroke(0, 255, 0,25);
   fill(0, 200, 255,25);
   //this defines the color and outlne of our triangles

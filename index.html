@@ -1,18 +1,94 @@
-<!doctype html>
-	<html>
-		<head>
-			<title></title>
-			<style type="text/css">
-				
-			</style>
-			<link rel="stylesheet" type="text/css" href="css/mystyle.css">
-		</head>
-		<body>
-			<h1>Giovanny Lopez-Barragan ART 74</h1>
-			<h2>This is my portfolio page</h2>
-			<h3>This is my <a href="game.html">game</a></h3>
-			<h3>This is my P5 <a href="p5/p5sketch/processingtoP5.html">sketch</a></h3>
-			<iframe src=">sketch.html" id="sketch"></iframe>
+<!DOCTYPE html>
+  <html>
+      <head>
+        <title>Welcome to Gio's Portfolio</title>
 
-		</body>
-	</html>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            color: #FFFFFF
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #FFFFFF;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #D60707;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+        <style type="text/css">
+        
+        </style>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        </head>
+        <body>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="remix.html">Remix Collage</a>
+          <a href="glitch.html">Glitch GIF</a>
+          <a href="https://vimeo.com/258053357">Video/Sound Project</a>
+          <a href="game.html">Net Art</a>
+          <a href="processing.html">Self Potrait</a>
+          <a href="https://vimeo.com/270000874">Cond. Statement</a>
+          <a href="p5/p5sketch/processingtoP5.html">P5 Exercise</a>
+        </div>
+
+        <div id="main">
+          <h2>Giovanny Lopez-Barragan</h2>
+          <h2>ART 74 | Portfolio</h2>
+          <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Navigation Bar</span>
+        </div>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+     </script>
+             
+   </body> 
+ </html> 
